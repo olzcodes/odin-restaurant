@@ -20,8 +20,7 @@ function img() {
   const img = document.createElement("img");
   img.src = bannerImage;
   img.classList.add("banner");
-  img.setAttribute("alt", "Photo of Dotonbori at night");
-  img.setAttribute("title", "Image credits: TOKYOLUV");
+  img.setAttribute("title", "Image credits: Adobe Firefly");
 
   return img;
 }
