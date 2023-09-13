@@ -3,6 +3,7 @@ import { home } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
 import { footer } from "./footer";
+import "./style.css";
 
 const body = document.body;
 const content = document.getElementById("content");
