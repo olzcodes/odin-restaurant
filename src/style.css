@@ -138,6 +138,13 @@ div.item-description {
 }
 
 footer {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: lightgray;
   padding: 5px;
+}
+
+footer a {
+  color: gray;
 }
