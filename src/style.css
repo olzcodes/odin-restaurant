@@ -68,6 +68,10 @@ h1 {
   margin: 5px;
 }
 
+.banner {
+  width: 100%;
+}
+
 nav {
   display: flex;
 }
