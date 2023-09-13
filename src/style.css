@@ -105,16 +105,32 @@ div.text {
 }
 
 div.menu-item {
+  width: 80vw;
   align-self: self-start;
   margin: 10px 25px;
 }
 
-div.item-name {
+div.item-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
   font-size: large;
+  border-radius: 15px;
+  padding: 5px 12px;
+}
+
+div.item-name {
+  color: orangered;
+}
+
+div.item-price {
+  font-size: small;
 }
 
 div.item-description {
   font-size: small;
+  padding: 5px 12px;
 }
 
 .icon {
