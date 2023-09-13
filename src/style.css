@@ -104,6 +104,19 @@ div.text {
   margin: 10px 25px;
 }
 
+div.menu-item {
+  align-self: self-start;
+  margin: 10px 25px;
+}
+
+div.item-name {
+  font-size: large;
+}
+
+div.item-description {
+  font-size: small;
+}
+
 .icon {
   margin: 15px;
 }
