@@ -1,6 +1,9 @@
+import bannerImage from "./images/banner.png";
+
 export function header() {
   const header = document.createElement("header");
   header.append(h1());
+  header.append(img());
   header.append(nav());
 
   return header;
@@ -11,6 +14,16 @@ function h1() {
   h1.textContent = `Odin Restaurant`;
 
   return h1;
+}
+
+function img() {
+  const img = document.createElement("img");
+  img.src = bannerImage;
+  img.classList.add("banner");
+  img.setAttribute("alt", "Photo of Dotonbori at night");
+  img.setAttribute("title", "Image credits: TOKYOLUV");
+
+  return img;
 }
 
 function nav() {
