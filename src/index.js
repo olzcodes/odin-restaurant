@@ -13,7 +13,7 @@ body.append(footer());
 
 const clickHandlerNavButtons = function () {
   let buttonName = this.textContent;
-  content.removeChild(content.firstChild);
+  content.innerHTML = "";
   if (buttonName === "Home") content.append(home());
   if (buttonName === "Menu") content.append(menu());
   if (buttonName === "Contact") content.append(contact());
