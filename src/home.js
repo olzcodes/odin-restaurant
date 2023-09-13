@@ -13,7 +13,6 @@ export function home() {
   };
 
   for (const [key, value] of Object.entries(pageContent)) {
-    console.log(`${key}: ${value}`);
     const element = document.createElement("div");
     element.classList.add("text");
     element.setAttribute("id", `${key}`);
