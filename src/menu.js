@@ -1,6 +1,12 @@
 export function menu() {
   const main = document.createElement("main");
 
+  const heading = document.createElement("div");
+  heading.classList.add("text");
+  heading.setAttribute("id", "heading");
+  heading.textContent = "A Taste Of Asgard";
+  main.append(heading);
+
   const menuItems = [
     {
       name: `Allfather's Burger`,
@@ -33,17 +39,30 @@ export function menu() {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
 
+    main.append(menuItem);
+
+    const itemHeading = document.createElement("div");
+    itemHeading.classList.add("item-heading");
+
+    menuItem.append(itemHeading);
+
     const itemName = document.createElement("div");
     itemName.classList.add("item-name");
-    itemName.textContent = `${value.name} .......... $${value.price}`;
-    menuItem.append(itemName);
+    itemName.textContent = value.name;
+
+    itemHeading.append(itemName);
+
+    const itemPrice = document.createElement("div");
+    itemPrice.classList.add("item-price");
+    itemPrice.textContent = `$${value.price}`;
+
+    itemHeading.append(itemPrice);
 
     const itemDescription = document.createElement("div");
     itemDescription.classList.add("item-description");
     itemDescription.textContent = `${value.description}`;
-    menuItem.append(itemDescription);
 
-    main.append(menuItem);
+    menuItem.append(itemDescription);
   }
 
   return main;
