@@ -20,7 +20,7 @@ export function contact() {
     },
     message: {
       heading: `Thank you`,
-      content: `Thank you for considering Odin's Feast for your divine dining adventure. We look forward to welcoming you to our halls of legendary flavor. Skål!`,
+      content: `Thank you for considering Odin's Feast for your divine dining adventure. <br>We look forward to welcoming you to our halls of legendary flavor.`,
     },
   };
 
