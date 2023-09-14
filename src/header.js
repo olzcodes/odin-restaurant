@@ -11,7 +11,7 @@ export function header() {
 
 function h1() {
   const h1 = document.createElement("h1");
-  h1.textContent = `Odin Restaurant`;
+  h1.textContent = `Odin's Feast`;
 
   return h1;
 }
