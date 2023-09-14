@@ -31,6 +31,7 @@ function nav() {
 
   navButtons.forEach((navButton) => {
     let buttonEl = document.createElement("button");
+    buttonEl.setAttribute("id", `btn-${navButton.toLowerCase()}`);
     buttonEl.textContent = `${navButton}`;
 
     nav.append(buttonEl);
