@@ -10,8 +10,8 @@ export function contact() {
   const pageContent = {
     address: {
       heading: `Address`,
-      content: `Asgardian Way, Hall of Valhalla
-    Norse Realm, NRV 001`,
+      content: `Asgardian Way, <br>Hall of Valhalla
+    Norse Realm, <br>NRV 001`,
     },
     hours: {
       heading: `Hours of Operation`,
