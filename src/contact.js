@@ -30,15 +30,18 @@ export function contact() {
     const contactInfo = document.createElement("div");
     contactInfo.classList.add("contact-info");
     contactInfo.classList.add(`${key}`);
+
     const heading = document.createElement("div");
     heading.classList.add("heading");
     heading.innerHTML = `${value.heading}`;
+
     const content = document.createElement("div");
     content.classList.add("content");
     content.innerHTML = `${value.content}`;
+
+    main.append(contactInfo);
     contactInfo.append(heading);
     contactInfo.append(content);
-    main.append(contactInfo);
   }
 
   function img() {
