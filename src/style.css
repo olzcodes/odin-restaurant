@@ -6,7 +6,7 @@
   --accent-color: orangered;
   --accent-color-two: whitesmoke;
   --active-color: tomato;
-  --active-color-two: darkslateblue;
+  --active-color-two: darkslategray;
   --inactive-color: silver;
 }
 
@@ -53,6 +53,7 @@ h1 {
 
 .banner {
   width: 100%;
+  box-shadow: 0px 0px 15px 8px var(--inactive-color);
 }
 
 nav {
@@ -70,8 +71,8 @@ nav button {
   box-shadow: 0px 0px 15px 2px var(--inactive-color);
 }
 
-nav button .active {
-  box-shadow: 0px 0px 15px 2px var(--active-color);
+nav button.active {
+  box-shadow: 0px 0px 20px 2px var(--active-color-two);
 }
 
 div#content {
@@ -132,7 +133,7 @@ div.contact-info {
 }
 
 div.contact-info .heading {
-  color: var(--active-color);
+  color: var(--accent-color);
 }
 
 .icon {
