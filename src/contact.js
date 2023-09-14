@@ -1,3 +1,5 @@
+import Icon from "./images/rune-icon.png";
+
 export function contact() {
   const main = document.createElement("main");
 
@@ -39,6 +41,17 @@ export function contact() {
     contactInfo.append(content);
     main.append(contactInfo);
   }
+
+  function img() {
+    const img = document.createElement("img");
+    img.src = Icon;
+    img.classList.add("icon");
+    img.setAttribute("title", "Image credits: Flaticon - Rune - 336182");
+
+    return img;
+  }
+
+  main.append(img());
 
   return main;
 }
