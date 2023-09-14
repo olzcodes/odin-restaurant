@@ -27,7 +27,6 @@ export function contact() {
   };
 
   for (const [key, value] of Object.entries(pageContent)) {
-    console.log(key, value);
     const contactInfo = document.createElement("div");
     contactInfo.classList.add("contact-info");
     contactInfo.classList.add(`${key}`);
