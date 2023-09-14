@@ -9,9 +9,14 @@ const body = document.body;
 const content = document.getElementById("content");
 body.insertBefore(header(), content);
 content.append(home());
+document.querySelector("#btn-home").classList.add("active");
 body.append(footer());
 
+const navButtons = document.querySelectorAll("button");
+
 const clickHandlerNavButtons = function () {
+  navButtons.forEach((button) => button.classList.remove("active"));
+  this.classList.add("active");
   let buttonName = this.textContent;
   content.innerHTML = "";
   if (buttonName === "Home") content.append(home());
@@ -19,7 +24,6 @@ const clickHandlerNavButtons = function () {
   if (buttonName === "Contact") content.append(contact());
 };
 
-const navButtons = document.querySelectorAll("button");
 navButtons.forEach((button) =>
   button.addEventListener("click", clickHandlerNavButtons)
 );
