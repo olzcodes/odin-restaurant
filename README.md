@@ -13,9 +13,11 @@ https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
 ## Screenshots
 
 Homepage
+
 ![screenshot showing the homepage](./screenshots/screenshot-1.png)
 
 Menu page
+
 ![screenshot showing the menu page](./screenshots/screenshot-2.png)
 
 ## What I learned from this project
